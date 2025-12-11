@@ -7,13 +7,13 @@ const ctaLinks = [
     icon: BookOpen,
     title: "Explore the Full Curriculum",
     description: "See what you'll learn across 4 years",
-    href: "/curriculum",
+    href: "/bbis/curriculum",
   },
   {
     icon: FlaskConical,
     title: "Discover Learning Resources",
     description: "Labs, libraries, and tech infrastructure",
-    href: "/resources",
+    href: "/bbis/resources",
   },
   {
     icon: Users,

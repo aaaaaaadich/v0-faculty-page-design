@@ -17,8 +17,8 @@ export function Header() {
               <span className="text-primary-foreground font-bold text-lg lg:text-xl">KU</span>
             </div>
             <div className="hidden sm:block">
-              <p className="font-serif font-bold text-foreground text-lg">School of Management</p>
-              <p className="text-xs text-muted-foreground">Kathmandu University</p>
+              <p className="font-serif font-bold text-foreground text-lg">Department of Management Informatics and Communication</p>
+              <p className="text-xs text-muted-foreground">School of Management, Kathmandu University</p>
             </div>
           </Link>
 

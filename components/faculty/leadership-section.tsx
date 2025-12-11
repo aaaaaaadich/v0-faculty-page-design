@@ -3,13 +3,17 @@ import { Quote } from "lucide-react"
 
 const leaders = [
   {
-    name: "Prof. Dr. Bhola Thapa",
-    title: "Governor, Nepal Rastra Bank",
-    role: "Chancellor, Kathmandu University",
-    image: "/distinguished-nepali-male-professor-in-formal-suit.jpg",
+    name: "Prof. Dr. Biswo Nath Poudel",
+    title: "Governor of Nepal",
+    role: "Professor, KU School of Management",
+    image: "/nepali-professor-biswo-nath-poudel-leadership.jpg",
     quote:
-      "Excellence in education is the foundation of national prosperity. KU SOM represents our commitment to world-class business education.",
-    credentials: ["PhD Economics", "Former Secretary, Ministry of Finance", "30+ Years Leadership"],
+      "Education is the cornerstone of economic development. At KU SOM, we're not just teaching business—we're building the architects of Nepal's economic future.",
+    credentials: [
+      "PhD in Agricultural Economics, UC Berkeley",
+      "Former Vice Chairman, National Planning Commission",
+      "Former Senior Economic Advisor, Ministry of Finance",
+    ],
   },
   {
     name: "Prof. Dr. Subodh Sharma",
@@ -36,12 +40,13 @@ export function LeadershipSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16 lg:mb-24">
-          <span className="text-sm font-medium text-primary uppercase tracking-wider">Visionary Leadership</span>
+          <span className="text-sm font-medium text-primary uppercase tracking-wider">⭐ Visionary Leadership</span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
-            Guided by National Icons
+            Learn From Nepal's Most Powerful Minds
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Our program is championed by Nepal's most distinguished leaders in academia, policy, and business.
+            Study under the architects of Nepal's economic policy, global thought leaders, and transformative educators
+            who shape the nation's future.
           </p>
         </div>
 
@@ -56,7 +61,7 @@ export function LeadershipSection() {
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
                   src={leader.image || "/placeholder.svg"}
-                  alt={leader.name}
+                  alt={`${leader.name}, ${leader.title}, ${leader.role}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />

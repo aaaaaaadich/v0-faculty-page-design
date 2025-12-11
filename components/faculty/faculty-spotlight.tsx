@@ -100,13 +100,13 @@ export function FacultySpotlight() {
 
         {/* Featured faculty - Interactive grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-          {/* Faculty list */}
-          <div className="lg:col-span-4 space-y-3">
+          {/* Faculty list - Scrollable */}
+          <div className="lg:col-span-4 max-h-[450px] overflow-y-auto space-y-3 pr-2 custom-scrollbar">
             {facultyMembers.map((faculty) => (
               <button
                 key={faculty.name}
                 onClick={() => setSelectedFaculty(faculty)}
-                className={`w-full text-left p-4 rounded-xl border transition-all duration-300 ${
+                className={`w-full text-left p-4 rounded-xl border transition-all duration-300 flex-shrink-0 ${
                   selectedFaculty.name === faculty.name
                     ? "bg-primary text-primary-foreground border-primary shadow-lg"
                     : "bg-card border-border hover:border-primary/50 hover:shadow-md"
@@ -114,7 +114,7 @@ export function FacultySpotlight() {
               >
                 <div className="flex items-center gap-4">
                   <div className="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 border-2 border-background">
-                    <Image src={faculty.image || "/placeholder.svg"} alt={faculty.name} fill className="object-cover" />
+                    <Image src={faculty.image || "/placeholder.svg"} alt={`${faculty.name}, ${faculty.title}`} fill className="object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4
@@ -150,7 +150,7 @@ export function FacultySpotlight() {
                 <div className="aspect-square md:aspect-auto relative">
                   <Image
                     src={selectedFaculty.image || "/placeholder.svg"}
-                    alt={selectedFaculty.name}
+                    alt={`${selectedFaculty.name}, ${selectedFaculty.title}, specializing in ${selectedFaculty.specialization}`}
                     fill
                     className="object-cover"
                   />
@@ -194,16 +194,16 @@ export function FacultySpotlight() {
                     </div>
                   </div>
 
-                  {/* Research areas */}
+                  {/* Courses at BBIS */}
                   <div className="mt-6 pt-6 border-t border-border">
-                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-3">Research Areas</p>
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-3">Teaches in BBIS Program</p>
                     <div className="flex flex-wrap gap-2">
-                      {selectedFaculty.research.map((area) => (
+                      {selectedFaculty.courses.map((course) => (
                         <span
-                          key={area}
+                          key={course}
                           className="text-xs px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium"
                         >
-                          {area}
+                          {course}
                         </span>
                       ))}
                     </div>
@@ -221,4 +221,29 @@ export function FacultySpotlight() {
       </div>
     </section>
   )
+}
+
+const styles = `
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+`;
+
+if (typeof document !== "undefined") {
+  const styleElement = document.createElement("style");
+  styleElement.textContent = styles;
+  if (!document.getElementById("faculty-scrollbar-styles")) {
+    styleElement.id = "faculty-scrollbar-styles";
+    document.head.appendChild(styleElement);
+  }
 }

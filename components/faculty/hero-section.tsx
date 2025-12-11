@@ -24,7 +24,7 @@ export function HeroSection() {
           {/* Subheadline */}
           <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed text-pretty">
             At KU School of Management, you don't just study information systems—you learn from
-            <span className="text-foreground font-medium"> governors, vice-chancellors, industry pioneers, </span>
+            <span className="text-foreground font-medium"> Nepal's Governor, vice-chancellors, nation-builders, </span>
             and <span className="text-foreground font-medium">celebrated professors</span> who are shaping the future of
             business and technology in Nepal.
           </p>
@@ -33,13 +33,13 @@ export function HeroSection() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-12 max-w-3xl mx-auto mb-16">
             <div className="flex flex-col items-center p-6 rounded-2xl bg-card border border-border">
               <BookOpen className="w-8 h-8 text-primary mb-3" />
-              <span className="text-3xl lg:text-4xl font-bold text-foreground">25+</span>
+              <span className="text-3xl lg:text-4xl font-bold text-foreground">10+</span>
               <span className="text-sm text-muted-foreground mt-1">PhD & Industry Experts</span>
             </div>
             <div className="flex flex-col items-center p-6 rounded-2xl bg-card border border-border">
               <Users className="w-8 h-8 text-primary mb-3" />
-              <span className="text-3xl lg:text-4xl font-bold text-foreground">15:1</span>
-              <span className="text-sm text-muted-foreground mt-1">Student-Faculty Ratio</span>
+              <span className="text-3xl lg:text-4xl font-bold text-foreground">50+</span>
+              <span className="text-sm text-muted-foreground mt-1">Years Combined Experience</span>
             </div>
             <div className="flex flex-col items-center p-6 rounded-2xl bg-card border border-border">
               <Award className="w-8 h-8 text-primary mb-3" />

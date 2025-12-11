@@ -79,7 +79,7 @@ export function VisitingFaculty() {
               <div className="aspect-square relative overflow-hidden">
                 <Image
                   src={expert.image || "/placeholder.svg"}
-                  alt={expert.name}
+                  alt={`${expert.name}, ${expert.title}, expert in ${expert.expertise}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
