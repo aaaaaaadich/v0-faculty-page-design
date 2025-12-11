@@ -40,7 +40,7 @@ const leaders = [
     name: "Prof. Dr. Achyut Prasad Wagle",
     title: "Vice-Chancellor",
     role: "Kathmandu University",
-    image: "/achyut-wagle.jpg",
+    image: "/Achyut-Wagle.jpg",
     credentials: ["PhD Management Science", "International Academic Fellow", "Education Reform Leader"],
     academicBackground: [
       "PhD Economics - IIT Kanpur",
