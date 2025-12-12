@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube } from "lucide-react"
 
 export function Footer() {
@@ -9,16 +10,18 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">KU</span>
+              <div className="w-12 h-12 flex items-center justify-center">
+                <Image src="/logo.png" alt="KU Logo" width={48} height={48} className="object-contain" />
               </div>
               <div>
-                <p className="font-serif font-bold text-background text-lg">School of Management</p>
-                <p className="text-xs text-background/60">Kathmandu University</p>
+                <p className="font-serif font-bold text-background text-sm leading-tight">
+                  Department of Management<br />Informatics and Communication
+                </p>
+                <p className="text-xs text-background/60 mt-1">School of Management, Kathmandu University</p>
               </div>
             </div>
             <p className="text-sm text-background/70 leading-relaxed">
-              Shaping Nepal's next generation of business and technology leaders since 1994.
+              Shaping Nepal's next generation of business and technology leaders since 2014.
             </p>
           </div>
 

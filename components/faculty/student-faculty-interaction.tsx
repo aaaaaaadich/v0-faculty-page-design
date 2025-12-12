@@ -28,19 +28,14 @@ const interactions = [
 
 const testimonials = [
   {
-    quote: "Prof. Bhatta didn't just teach me data analytics—he helped me land my first job at a fintech company.",
-    author: "Prashant Khadka",
-    role: "BBIS '23, Data Analyst at Esewa",
+    quote: "Business models and trends are getting their way more towards information system and technology. Concepts like Business re-engineering and business intelligence are in front of business scholars to make important insight. Courses like Bachelor of Business Information Systems hold the major factors to drive ones interest towards it and the inception of such course in one of the leading university is boon in itself. As an alumni, I found the content of course aided with effective teaching techniques, and well supportive department and faculty members.",
+    author: "Aaditya Acharya",
+    role: "BBIS '19",
   },
   {
-    quote: "The faculty here treats you like a future colleague, not just a student. That respect changes everything.",
-    author: "Shreya Maharjan",
-    role: "BBIS '24, Software Engineer at Leapfrog",
-  },
-  {
-    quote: "My thesis advisor spent countless hours helping me refine my research. That dedication is rare.",
-    author: "Rohan Paudel",
-    role: "BBIS '22, Pursuing MS at TU Munich",
+    quote: "It was the best decision I ever made to study BBIS since it has offered me more options for my career. I have an understanding of both IT and management terminologies, which has helped me advance in my job since I oversee both digital marketing and sales for the firm where I work. It has helped me to stand out from the crowd and demonstrate my abilities. I've always believed in myself, and the hard work I put in and while studying BBIS has undoubtedly given me a solid start in my career here in New Zealand. I work as a National Marketing Manager and Taurnaga Sales Manager, and I am in charge of the company's entire marketing as well as the sales department for a branch. So, investing my four years studying BBIS has yielded results that I could never have envisioned, and I am grateful to Kathmandu University for making this course more exciting by providing me with the best equipment, resources and the finest professors who have shaped me into the person I am today.",
+    author: "Sweta Hamal",
+    role: "BBIS '19, National Marketing Manager and Taurnaga Sales Manager",
   },
 ]
 
@@ -78,7 +73,7 @@ export function StudentFacultyInteraction() {
           <h3 className="font-serif text-2xl font-bold text-foreground">What Students Say</h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {testimonials.map((testimonial) => (
             <div key={testimonial.author} className="p-6 lg:p-8 rounded-2xl bg-card border border-border">
               <p className="text-foreground italic mb-6 leading-relaxed text-pretty">"{testimonial.quote}"</p>

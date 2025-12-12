@@ -171,14 +171,12 @@ export function IndustryExpertsSlider() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16 lg:mb-24">
-          <span className="text-sm font-medium text-primary uppercase tracking-wider">🚀 Industry Pioneers</span>
+          <span className="text-sm font-medium text-primary uppercase tracking-wider">Industry Pioneers</span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
             Learn From Industry Game-Changers
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Nepal's most successful tech leaders and entrepreneurs bring real-world expertise directly into our classrooms.
-            These are the innovators building tomorrow's solutions today.
-          </p>
+            With distinguished visiting faculty from all over Nepal, BBIS connects students with tech innovators and leading entrepreneurs who are actively shaping the nation’s digital future, a true strength of our visiting faculty nepal network.</p>    
         </div>
 
         {/* Main slider */}

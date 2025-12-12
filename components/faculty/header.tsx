@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -13,8 +14,8 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg lg:text-xl">KU</span>
+            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-white flex items-center justify-center overflow-hidden">
+              <Image src="/logo.png" alt="KU Logo" width={48} height={48} className="object-contain" />
             </div>
             <div className="hidden sm:block">
               <p className="font-serif font-bold text-foreground text-lg">Department of Management Informatics and Communication</p>
@@ -42,10 +43,10 @@ export function Header() {
               Learning Approach
             </Link>
             <Link
-              href="#visiting"
+              href="#workshops"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Guest Experts
+              Workshops
             </Link>
             <Button variant="default" size="sm">
               Explore Curriculum
@@ -80,10 +81,10 @@ export function Header() {
               Learning Approach
             </Link>
             <Link
-              href="#visiting"
+              href="#workshops"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Guest Experts
+              Workshops
             </Link>
             <Button variant="default" size="sm" className="w-fit">
               Explore Curriculum

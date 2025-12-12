@@ -1,24 +1,24 @@
-import { ArrowRight, BookOpen, Users, FlaskConical } from "lucide-react"
+import { ArrowRight, BookOpen, Heart, FlaskConical } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const ctaLinks = [
   {
     icon: BookOpen,
-    title: "Explore the Full Curriculum",
-    description: "See what you'll learn across 4 years",
+    title: "See the Full Curriculum",
+    description: "Explore courses and learning outcomes",
     href: "/bbis/curriculum",
   },
   {
     icon: FlaskConical,
-    title: "Discover Learning Resources",
-    description: "Labs, libraries, and tech infrastructure",
+    title: "Learn About Labs & Resources",
+    description: "Discover our learning labs and facilities",
     href: "/bbis/resources",
   },
   {
-    icon: Users,
-    title: "Read Student Stories",
-    description: "Hear from current students and alumni",
+    icon: Heart,
+    title: "Experience Student Life at KU",
+    description: "Discover campus culture and student activities",
     href: "/student-life",
   },
 ]

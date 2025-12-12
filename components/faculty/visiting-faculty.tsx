@@ -3,40 +3,40 @@ import { Briefcase, Users, Calendar } from "lucide-react"
 
 const workshops = [
   {
-    name: "Fintech Revolution in Nepal",
-    instructor: "Mr. Ajay Shrestha",
-    title: "CEO, F1Soft International",
-    image: "/nepali-male-ceo-tech-executive-professional-portra.jpg",
-    description: "Explore how fintech is transforming Nepal's financial landscape and the opportunities for tech professionals.",
-    duration: "2 sessions",
-    topics: ["Digital Payments", "Blockchain Basics", "Startup Funding"],
+    name: "Network Design & IP Routing",
+    instructor: "Industry Specialist from ISMS, Kathmandu University",
+    title: "ISMS, KU",
+    image: "/w1.jpg",
+    description: "Practical training on modern networking systems, routing concepts, and real-world infrastructure scenarios.",
+    duration: "1 session",
+    topics: ["Data Networking", "Routing Protocols", "Infrastructure Design"],
   },
   {
-    name: "AI & Machine Learning for Business",
-    instructor: "Ms. Roshani Chettri",
-    title: "CTO, CloudFactory",
-    image: "/nepali-female-cto-tech-executive-professional-port.jpg",
-    description: "Hands-on workshop on implementing AI solutions in real-world business scenarios and scaling ML models.",
-    duration: "3 sessions",
-    topics: ["ML Fundamentals", "Practical AI Applications", "Data Strategy"],
+    name: "Computer Troubleshooting and Repair",
+    instructor: "Mr. Sameer Tamrakar, Mr. Bibas Neupane",
+    title: "Seasoned professionals in the field of computer",
+    image: "/w2.jpg",
+    description: "Hands-on workshop on implementing repairing and troubleshooting techniques for computer hardware and software.",
+    duration: "1 session",
+    topics: ["Hardware Repair", "Software Troubleshooting", "Maintenance Best Practices"],
   },
   {
-    name: "Digital Economy & Development Policy",
-    instructor: "Dr. Suman Shakya",
-    title: "Director, World Bank Nepal",
-    image: "/nepali-male-economist-world-bank-professional-port.jpg",
-    description: "Understand how technology shapes economic development and policy-making in emerging markets.",
-    duration: "2 sessions",
-    topics: ["Tech Policy", "Digital Inclusion", "Market Analysis"],
+    name: "Employment Training",
+    instructor: "Mr. Prayag Raj Upadhya and Mr. Kshtij Jung Thapa",
+    title: "Job Dynamics",
+    image: "/w3.jpg",
+    description: "Intensive training on resume building, interview skills, and workplace professionalism to prepare students for successful job placements.",
+    duration: "1 session",
+    topics: ["Resume Building", "Interview Skills", "Workplace Professionalism"],
   },
   {
-    name: "Enterprise Software Architecture",
-    instructor: "Mr. Bikal Shrestha",
-    title: "VP Engineering, Leapfrog",
-    image: "/nepali-male-vp-engineering-tech-professional-portr.jpg",
-    description: "Learn system design principles and architectural patterns used in building scalable enterprise systems.",
-    duration: "3 sessions",
-    topics: ["System Design", "Microservices", "Performance Optimization"],
+    name: "Build to Solve",
+    instructor: "Mr. Durga Prasad Dhakal",
+    title: "Assistant Professor, Kathmandu University",
+    image: "/w4.png",
+    description: "Learn problem identification and solution design through hands-on projects that address real-world challenges.",
+    duration: "5 sessions",
+    topics: ["Problem Solving", "Design Thinking", "Project Implementation"],
   },
 ]
 
@@ -47,30 +47,30 @@ export function VisitingFaculty() {
         {/* Section header */}
         <div className="mb-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-sm font-medium text-primary uppercase tracking-wider">Professional Development</span>
+            <span className="text-sm font-medium text-primary uppercase tracking-wider">Workshops that matters</span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
               Industry-Led Workshops
             </h2>
             <p className="text-lg text-muted-foreground text-pretty">
               Gain practical skills and industry insights through intensive workshops led by Nepal's top tech leaders. 
-              From fintech to AI, these hands-on sessions bridge the gap between theory and real-world application.
+              Our workshops brings real-world expertise from fintech to AI, bridging the gap between theory and application.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
             <div className="p-6 rounded-2xl bg-card border border-border text-center">
               <Briefcase className="w-8 h-8 text-primary mx-auto mb-3" />
-              <span className="text-3xl font-bold text-foreground">10+</span>
+              <span className="text-3xl font-bold text-foreground">5+</span>
               <p className="text-sm text-muted-foreground mt-1">Workshops Annually</p>
             </div>
             <div className="p-6 rounded-2xl bg-card border border-border text-center">
               <Users className="w-8 h-8 text-primary mx-auto mb-3" />
-              <span className="text-3xl font-bold text-foreground">200+</span>
+              <span className="text-3xl font-bold text-foreground">100+</span>
               <p className="text-sm text-muted-foreground mt-1">Students Trained</p>
             </div>
             <div className="p-6 rounded-2xl bg-card border border-border text-center">
               <Calendar className="w-8 h-8 text-primary mx-auto mb-3" />
-              <span className="text-3xl font-bold text-foreground">30+</span>
+              <span className="text-3xl font-bold text-foreground">15+</span>
               <p className="text-sm text-muted-foreground mt-1">Total Session Hours</p>
             </div>
           </div>

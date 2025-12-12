@@ -17,16 +17,16 @@ export function HeroSection() {
 
           {/* Main headline */}
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6 text-balance">
-            Learn From Nepal's
-            <span className="block text-primary">Brightest Minds</span>
+            BBIS Faculty in Nepal:
+            <span className="block text-primary">Learn From the Brightest Minds</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed text-pretty">
-            At KU School of Management, you don't just study information systems—you learn from
-            <span className="text-foreground font-medium"> Nepal's Governor, vice-chancellors, nation-builders, </span>
-            and <span className="text-foreground font-medium">celebrated professors</span> who are shaping the future of
-            business and technology in Nepal.
+            Experience the KU learning approach at KU School of Management. Our KU SOM faculty includes 
+            <span className="text-foreground font-medium"> Nepal's Governor, information systems professors, nation-builders, </span>
+            and <span className="text-foreground font-medium">celebrated academics</span> who bring world-class expertise in 
+            business and technology. This is where theory meets practice.
           </p>
 
           {/* Stats */}

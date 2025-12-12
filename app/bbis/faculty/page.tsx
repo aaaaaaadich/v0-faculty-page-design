@@ -6,6 +6,7 @@ import { TeachingApproach } from "@/components/faculty/teaching-approach"
 import { VisitingFaculty } from "@/components/faculty/visiting-faculty"
 import { StudentFacultyInteraction } from "@/components/faculty/student-faculty-interaction"
 import { CareerLink } from "@/components/faculty/career-link"
+import { CTASection } from "@/components/faculty/cta-section"
 import { Header } from "@/components/faculty/header"
 import { Footer } from "@/components/faculty/footer"
 
@@ -21,6 +22,7 @@ export default function FacultyPage() {
       <TeachingApproach />
       <VisitingFaculty />
       <StudentFacultyInteraction />
+      <CTASection />
       <Footer />
     </main>
   )

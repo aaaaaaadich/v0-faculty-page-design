@@ -12,7 +12,12 @@ export const metadata: Metadata = {
   description:
     "Discover the brilliant minds shaping Nepal's future business leaders. Meet world-class professors, industry icons, and celebrated academics at KU SOM's BBIS program.",
   keywords: "BBIS faculty Nepal, KU SOM faculty, Information systems professors Nepal, KU learning approach",
-    generator: 'v0.app'
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
