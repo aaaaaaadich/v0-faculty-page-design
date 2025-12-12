@@ -1,4 +1,4 @@
-import { Clock, MessageCircle, Heart, CheckCircle } from "lucide-react"
+import { Clock, MessageCircle, Lightbulb, CheckCircle } from "lucide-react"
 
 const interactions = [
   {
@@ -14,10 +14,10 @@ const interactions = [
       "Get paired with faculty mentors who guide your academic journey, career choices, and personal development.",
   },
   {
-    icon: Heart,
-    title: "Small Class Sizes",
+    icon: Lightbulb,
+    title: "Research Opportunities",
     description:
-      "With a 15:1 student-faculty ratio, every student gets personalized attention and meaningful interactions.",
+      "Participate in cutting-edge research projects with faculty. Publish your findings and contribute to Nepal's tech innovation ecosystem.",
   },
   {
     icon: CheckCircle,

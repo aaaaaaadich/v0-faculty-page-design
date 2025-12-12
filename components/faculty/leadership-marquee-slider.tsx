@@ -78,7 +78,7 @@ const leaders = [
       "Life Member, NELTA",
     ],
     teaches: [
-      "Used to teach Managerial Communication in BBIS",
+      "Managerial Communication",
       
     ],
     valueProps: [
@@ -212,9 +212,9 @@ export function LeadershipMarqueeSlider() {
                 </div>
               </div>
 
-              {/* Teaches at KUSOM */}
+              {/* Previously taught at KUSOM */}
               <div className="mb-8">
-                <h4 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">Teaches at KU SOM</h4>
+                <h4 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">Previously taught at KU SOM</h4>
                 <div className="flex flex-wrap gap-2">
                   {currentLeader.teaches?.map((subject) => (
                     <span key={subject} className="text-xs px-3 py-1.5 rounded-full bg-green-100 text-green-900 font-medium">
